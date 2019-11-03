@@ -1,0 +1,161 @@
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-rangeslider_scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="main.css">
+		
+		<title>Questionnaire Test</title>
+	</head>
+	<body>
+		<div class="header container">
+			<nav class="navbar navbar-expand-lg">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Навигация"><input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle"><span></span></label></button>
+				 <div class="collapse navbar-collapse" id="navbarMenu">
+					<ul class="col-12 navbar-nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="#personal">Личная информация</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#experience">Опыт</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#js">JavaScript</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">О себе</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="main_title">
+			<h1>Анкета</h1>
+		</div>
+
+		<form action="#" method="post">
+		<div class="personal container text-center" id="personal">
+			<div class="row"
+			<img src="personal-icon.png" class="mx-auto" alt="personal">
+			<p class="col-12 title-section">Личная информация</p>
+			<div class="col-12 form-group">
+				<input type="text" id="formName" class="form-control mx-auto">
+				<label for="formName">ФИО</label>
+			</div>
+			<div class="col-12 form-group">
+				<div class="dropdown mx-auto">
+					<button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Год рождения</button>
+					<div class="dropdown-menu shadow text-center w-100" aria-labelledby="dropdownMenu">
+						<a class="dropdown-item" href="1991">1991</a>
+						<a class="dropdown-item" href="1992">1992</a>
+						<a class="dropdown-item" href="1993">1993</a>
+						<a class="dropdown-item" href="1994">1994</a>
+						<a class="dropdown-item" href="1995">1995</a>
+						<a class="dropdown-item" href="1996">1996</a>
+					</div>
+				</div>
+				<input type="hidden" value="" id="birthYear" name="">
+			</div>
+			<div class="col-12 form-group">
+				<input type="text" class="form-control mx-auto">
+				<label for="formName">Место проживания</label>
+			</div>
+			<div class="col-12 form-group">
+				<input type="text" class="form-control mx-auto" >
+				<label for="formName">Skype</label>
+			</div>
+			<div class="col-12 form-group">
+				<input type="email" class="form-control mx-auto">
+				<label for="formName">E-mail</label>
+			</div>
+			</div>
+		</div>
+
+		<div class="experience container" id="experience">
+			<div class="row">
+				<img src="experience-icon.png" class="mx-auto" alt="experience">
+				<p class="col-12 title-section text-center">Расскажите о своем опыте</p>
+				<div class="col-md-4">
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="css">
+					  <label class="custom-control-label" for="css">БЭМ/OOCSS</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="sass">
+					  <label class="custom-control-label" for="sass">Stylus/LESS/SASS</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="svg">
+					  <label class="custom-control-label" for="svg">Работаю с SVG</label>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="semantic">
+					  <label class="custom-control-label" for="semantic">Верстаю семантично</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="es16">
+					  <label class="custom-control-label" for="es16">ES2015/ES2016</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="gulp">
+					  <label class="custom-control-label" for="gulp">Gulp/GRUNT</label>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="Webpack">
+					  <label class="custom-control-label" for="Webpack">Webpack</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="jQuery">
+					  <label class="custom-control-label" for="jQuery">jQuery</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					  <input type="checkbox" class="custom-control-input" id="git">
+					  <label class="custom-control-label" for="git">Ипользую Git</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="js container" id="js">
+			<div class="row">
+					<img src="js-icon.png" class="mx-auto" alt="js">
+				<div class="col-12">
+					<p class="title-section text-center">Уровень владения JavaScript</p>
+					
+					<div class="rangeslider"> 
+						<div class="d-flex align-items-end justify-content-between">
+							<div class="rangeslider-text">Не владею</div>
+							<div class="rangeslider-text">Использую готовые решения</div>
+							<div class="rangeslider-text">Использую готовые решения и умею их переделывать</div>
+							<div class="rangeslider-text">Пишу сложный JS с нуля</div>
+						</div>
+						<div class="rangeslider-block"><input type="range" min="1" max="100" value="1" class="jsslider w-100" id="sliderRange">
+						  <div class="rangeslider_scale"><div class="rangeslider_scale_bg"></div><div class="rangeslider_scale_fill"></div><div class="rangeslider_scale_overlap"></div></div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<div class="about container" id="about">
+			<div class="row">
+				<img src="about-icon.png" class="mx-auto" alt="about">
+				<p class="col-12 title-section text-center">Расскажите о себе<br><small>Напишите несколько предложений, чем привлекла наша вакансия<br>и что вы ожидаете от работы у нас.</small></p>
+				<textarea class="form-control mx-auto" rows="3" placeholder="Понравилась тем, что..."></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary mx-auto">Готово</button>
+		</div>
+		</form>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="bootstrap.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
